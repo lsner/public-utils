@@ -1,0 +1,28 @@
+{
+  "name": "my-utils",
+  "version": "1.0.0",
+  "description": "tools",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d lib"
+  },
+  "bin": {
+    "my-utils": "./lib/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lsner/my-utils.git"
+  },
+  "author": "lsner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lsner/my-utils/issues"
+  },
+  "homepage": "https://github.com/lsner/my-utils#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.1",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}

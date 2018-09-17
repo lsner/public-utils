@@ -1,0 +1,5 @@
+#jetbrain
+/.idea
+
+# dependencies
+node_modules
