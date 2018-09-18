@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lsner/my-utils.git"
+    "url": "git+https://github.com/lsner/public-utils.git"
   },
   "author": "lsner",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lsner/my-utils/issues"
+    "url": "https://github.com/lsner/public-utils/issues"
   },
-  "homepage": "https://github.com/lsner/my-utils#readme",
+  "homepage": "https://github.com/lsner/public-utils#readme",
   "devDependencies": {
     "@babel/core": "^7.0.1",
     "@babel/preset-es2015": "^7.0.0-beta.53",

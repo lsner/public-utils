@@ -1,4 +1,4 @@
-# my-utils
+# public-utils
 我的常用方法集
 
 ### 目录结构
@@ -12,7 +12,7 @@
 > 下面两处的配置为了让package可以被全局安装
 ```javaScript
  "bin": {
-   "my-utils": "./lib/cli.js"
+   "public-utils": "./lib/cli.js"
  }
 ```
 ```javaScript
