@@ -1,5 +1,1 @@
-import {deepCopy} from "./deepCopy"
-
-export default {
-  deepCopy
-}
+export { default as deepCopy } from './deepCopy';
