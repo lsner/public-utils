@@ -24,7 +24,7 @@
 ### 进展
 - [x] 深拷贝deepCopy
 - [x] call重写
-- [ ] apply重写
+- [x] apply重写
 - [ ] bind重写
 - [ ] new重写
 - [ ] ajax重写
