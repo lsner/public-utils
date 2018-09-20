@@ -32,3 +32,6 @@
 - [ ] 观察者模式实现
 - [ ] 虚拟dom diff算法
 
+###个人博客
+<https://my.oschina.net/u/3607067>
+
