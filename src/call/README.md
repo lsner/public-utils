@@ -15,8 +15,8 @@
  //result: 小明
 ```
 >上面的代码有两个步骤
-1. call 改变了this 的指向，指向变为 person
-2. sayName 函数执行了
+>1. call 改变了this 的指向，指向变为 person
+>2. sayName 函数执行了
 
 ```javascript
  //猜测
@@ -31,8 +31,8 @@
 ```
 ### 第一步尝试版
 >1. 给person 对象添加fn方法
-2. sayName函数执行
-3. 删除person中的fn方法
+>2. sayName函数执行
+>3. 删除person中的fn方法
 
 ```javascript
  Function.prototype.myCall = function (obj) {
@@ -72,9 +72,8 @@ function sayName(age, phone) {
 sayName.call(person, 12, 12345) // 12 12345 小明
 
 ```
->但是参数的数量不可控
-于是我们可以这么写
-tips：1.arguments 是一个类数组对象 不是一个真的数组  2.eval 是个很特殊的方法 网上褒贬不一
+>但是参数的数量不可控,于是我们可以这么写
+>tips：1.arguments 是一个类数组对象 不是一个真的数组  2.eval 是个很特殊的方法 网上褒贬不一
 
 ```javascript
 Function.prototype.myCall = function (obj) {
