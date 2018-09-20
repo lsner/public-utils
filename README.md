@@ -19,3 +19,16 @@
   /lib/cli.js
 ```
 
+
+想要实现一些原生方法，plan进行中
+### 进展
+- [x] 深拷贝deepCopy
+- [x] call重写
+- [ ] apply重写
+- [ ] bind重写
+- [ ] new重写
+- [ ] ajax重写
+- [ ] Promise
+- [ ] 观察者模式实现
+- [ ] 虚拟dom diff算法
+
