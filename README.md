@@ -26,7 +26,7 @@
 - [x] call重写
 - [x] apply重写
 - [ ] bind重写
-- [ ] new重写
+- [x] new重写
 - [ ] ajax重写
 - [ ] Promise
 - [ ] 观察者模式实现
