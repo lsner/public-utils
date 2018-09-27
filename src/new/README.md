@@ -128,9 +128,10 @@ prototype是function特有的属性,当你创建函数时，js会为这个函数
 
 ![](https://github.com/lsner/public-utils/blob/master/imgs/proto_2.jpg)
 
-还有就是原型链的尽头(也就是Object.prototype的原型对象)是null , 因为Object.prototype.__proto__  //null
+还有就是原型链的尽头(也就是Object.prototype的原型对象)是null , 因为Object.prototype.__proto__ ( //null)
 
 如下图：
+
 ![](https://github.com/lsner/public-utils/blob/master/imgs/proto_3.jpg)
 
 ### 更深一步的探讨
