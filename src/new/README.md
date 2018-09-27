@@ -89,5 +89,8 @@ tips:如果构造函数没有返回或者返回的不是一个指定对象，比
 
 ### 补充：_proto_ 与 prototype
 
-每个对象都有一个_proto_（即原型对象）
+每个对象都有一个_proto_（即原型对象），prototype是function特有的属性,比如上面的Person构造函数，他的prototype在控制台打印的结果如图，是一个拥有constructor
+的对象，如下图：
+
+![](https://github.com/lsner/public-utils/blob/master/imgs/proto_1.jpg)
 
