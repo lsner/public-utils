@@ -2,18 +2,16 @@ function Person(name, age) {
   this.name = name
   this.age = age
   this.like = "休息"
-  return {
-    like: this.like
-  }
 }
 
-// Person.prototype.sayName = function () {
-//   console.log("this.name:", this.name)
-// }
+Person.prototype.hair = "black"
+Person.prototype.sayName = function () {
+  console.log("this.name:", this.name)
+}
 
 const man = new Person("张三", 18)
 console.log("demo man:", man)
-console.log(man.name, man.age)
+console.log(man.name, man.age,man.hair)
 
 
 function myNew() {
@@ -31,10 +29,6 @@ function myNew() {
 
   return hasReturn ? hasReturn : result
 }
-
-const b = myNew(Person, "张三", 19)
-console.log("test:", b)
-console.log(b.name, b.age)
 
 
 export default myNew
