@@ -102,27 +102,40 @@ one.toString === one.__proto__.toString // true
 看完之后还是不怎么明白__proto__到底是个啥，黑人问号❓
 
 prototype是function特有的属性,当你创建函数时，js会为这个函数自动创建prototype属性，且它的值是一个拥有constructor属性的对象。
+
 如下图：
+
 ![](https://github.com/lsner/public-utils/blob/master/imgs/proto_1.jpg)
+
 如果创建的函数被当成构造函数来使用的话，那么它的实例会继承构造函数的属性和方法（实例通过设置自己的__proto__指向承构造函数的prototype来实现这种继承）。
 
 #### 总结
 1.实际上js就是通过__proto__与prototype实现了原型链以及继承，
+
 2.构造函数通过prototype来存储需要共享的属性和方法,也可以通过设置prototype的指向来继承某个对象的属性
+
 3.对象的__proto__指向自己的构造函数的prototype，obj.__proto__.__proto__...的原型链由此产生（即原型对象的原型的原型对象...）,
+
 包括我们的操作符instanceof正是通过探测obj.__proto__.__proto__... === Constructor.prototype来验证obj是否是Constructor的实例。
 
 回到开头的代码，two = new Object()中Object是构造函数，所以two.__proto__就是Object.prototype。
+
 至于one，ES规范定义对象字面量的原型就是 Object.prototype。
+
 你可能会疑惑Object是个啥？？？其实它也是一个构造函数
+
 如下图：
+
 ![](https://github.com/lsner/public-utils/blob/master/imgs/proto_2.jpg)
+
 还有就是原型链的尽头(也就是Object.prototype的原型对象)是null , 因为Object.prototype.__proto__  //null
+
 如下图：
 ![](https://github.com/lsner/public-utils/blob/master/imgs/proto_3.jpg)
 
 ### 更深一步的探讨
 我们知道JS是单继承的，Object.prototype是原型链的顶端(但不是尽头)，所有对象从它继承了包括toString等等方法和属性。
+
 Object本身是构造函数，继承了Function.prototype; Function也是对象，继承了Object.prototype。这里就有一个_鸡和蛋_的问题：
 
 ```javascript
@@ -131,5 +144,7 @@ Function instanceof Object // true
 ```
 
 下图是一个很好的总结
+
 图片来自网络：
+
 ![](https://github.com/lsner/public-utils/blob/master/imgs/proto_4.jpg)
