@@ -21,16 +21,23 @@
 
 
 想要实现一些原生方法，plan进行中
-### 进展
+### js重写
 - [x] 深拷贝deepCopy
-- [x] call重写
-- [x] apply重写
-- [ ] bind重写
-- [x] new重写
+- [x] call重写   [文档](https://github.com/lsner/public-utils/blob/master/src/call/README.md)
+- [x] apply重写  [文档](https://github.com/lsner/public-utils/blob/master/src/apply/README.md)
+- [ ] bind重写(还剩一些结余)
+- [x] new重写   [文档](https://github.com/lsner/public-utils/blob/master/src/new/README.md)
 - [ ] ajax重写
 - [ ] Promise
 - [ ] 观察者模式实现
 - [ ] 虚拟dom diff算法
+
+### js深入知识点
+- [x] context  [文档](https://github.com/lsner/public-utils/blob/master/src/context/README.md)
+- [ ] 闭包
+- [ ] 原型链
+- [ ] this
+
 
 ### 个人博客
 <https://my.oschina.net/u/3607067>
