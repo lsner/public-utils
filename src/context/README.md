@@ -28,29 +28,29 @@ C()
 ```
 那么上面的这一段代码我们就可以解析为
 
--1.首先会有一个全局上下文
+- 1.首先会有一个全局上下文
 ```javascript
     ECStack.push(globalContext)
 ```
--2.函数C的执行上下文入栈
+- 2.函数C的执行上下文入栈
 ```javascript
     ECStack.push(<funC> functionContextC)
 ```
--3.函数C又调用了函数B，所以函数B的执行上下文入栈
+- 3.函数C又调用了函数B，所以函数B的执行上下文入栈
 ```javascript
     ECStack.push(<funB> functionContextB)
 ```
--4.函数B又调用了函数A，所以函数A的执行上下文入栈
+- 4.函数B又调用了函数A，所以函数A的执行上下文入栈
 ```javascript
     ECStack.push(<funA> functionContextA)
 ```
--5.函数A执行完了，出栈，函数B执行完了，出栈，以此类推
+- 5.函数A执行完了，出栈，函数B执行完了，出栈，以此类推
 ```javascript
     ECStack.pop(<funA> functionContextA)
     ECStack.pop(<funB> functionContextB)
     ECStack.pop(<funC> functionContextC)
 ```
--6.javascript接着执行下面的代码，但是ECStack底层永远有个globalContext
+- 6.javascript接着执行下面的代码，但是ECStack底层永远有个globalContext
 
 # 补充：
 ## 发现的有意思的一段代码(关于引用)
