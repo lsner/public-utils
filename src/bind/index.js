@@ -15,11 +15,7 @@ function a(age) {
 
 Function.prototype.myBind = function (obj) {
 
-  delete arguments[0]
-  let args = []
-  for (let key in arguments) {
-    args.push(arguments[key])
-  }
+  let args = Array.prototype.slice.call(arguments,1) //Array.prototype.slice.call() 将类数组arguments转换成数组的处理方式
 
   return this.apply(obj,args) //这一步很重要实际上就是改变this指向 并且把处理成数组格式的参数传进去
 }
