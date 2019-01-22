@@ -5,20 +5,17 @@
 重复第二步，直到所有元素均排序完毕。
 */
 function selection(arr) {
-    var min;
-    var _arr = []
-    _arr.push(arr[0])
     for (var i = 0; i < arr.length - 1; i++) {
-        min = i
+        var min = i
         for (var j = i + 1; j < arr.length; j++) {
             if (arr[j] < arr[min]) {
                 min = j
             }
         }
-        if (min && i < min) {
-            var temp = arr[min]
-            arr[min] = arr[i]
-            arr[i] = temp
+        if (i < min) {
+            var temp = arr[i]
+            arr[i] = arr[min]
+            arr[min] = temp
         }
     }
     console.log(arr)

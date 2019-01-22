@@ -13,6 +13,7 @@ function insertion(arr) {
         while (arr[flag - 1] > temp) {
             arr[flag] = arr[flag - 1]
             flag--
+            console.log(arr)
         }
 
         if(i !== flag){  //本身就比左侧最大的大 也就是本身与本身 没必要再置换了
