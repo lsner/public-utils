@@ -1,4 +1,3 @@
-import {myCall} from '../index';
 
 const person = {
   name: "小明"
